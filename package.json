@@ -1,0 +1,11 @@
+{
+  "name": "findrice.vn",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/noobnur/findrice.vn.git",
+  "author": "Nur Hidayah Sanwari <nurhsans@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon"
+  }
+}
