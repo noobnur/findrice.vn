@@ -1,5 +1,5 @@
 GET / - redirect to main page: job search
 
-GET /:slug - redirect to job page
+GET /about - redirect to abouts page
 
-GET /prospect - redirect to prospects page 
+GET /prospect - redirect to prospects page

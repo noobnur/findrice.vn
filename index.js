@@ -6,7 +6,6 @@ const bodyParser = require('body-parser')
 const path = require('path')
 
 
-
 const dbUrl = 'mongodb://localhost/Sentosa'
 const port = 4000
 
