@@ -29,6 +29,38 @@
 				<div class="col-md-12 col-lg-8">
 					<div class="row">
 <!-- A single job listing in a table -->
+{{#each jobs}}
+						<div class="col-lg-4 col-sm-6 job-listing thumbnail">
+							<h3 class="job-title"><a href={{this.hyperlink}} target="_blank">{{{this.title}}}</a></h3>
+							<table class="job-description job-description-table">
+									<tr>
+										<td> <span class="job-description-header">Sector:</span></td>
+										<td>{{{this.sector}}}</td>
+									</tr>
+									<tr>
+										<td> <span class="job-description-header">Location:</span></td>
+										<td>{{{this.city_name}}}, Vietnam</td>
+									</tr>
+							</table>
+
+						</div>
+						{{/each}}
+
+
+{{!--
+						<div class="col-lg-4 col-sm-6 job-listing thumbnail">
+							<h3 class="job-title"><a href="https://vn.indeed.com/viewjob?jk=49661c7b8ce9684e&tk=1c9dcqrmm0tht6bd&from=serp&vjs=3" target="_blank">Real Estate Business Staff </a></h3>
+							<table class="job-description job-description-table">
+									<tr>
+										<td> <span class="job-description-header">Sector:</span></td>
+										<td>Real Estate</td>
+									</tr>
+									<tr>
+										<td> <span class="job-description-header">Location:</span></td>
+										<td>Vinh</td>
+									</tr>
+							</table>
+						</div>
 						<div class="col-lg-4 col-sm-6 job-listing thumbnail">
 							<h3 class="job-title"><a href="https://vn.indeed.com/viewjob?jk=49661c7b8ce9684e&tk=1c9dcqrmm0tht6bd&from=serp&vjs=3" target="_blank">Real Estate Business Staff </a></h3>
 							<table class="job-description job-description-table">
@@ -43,34 +75,7 @@
 							</table>
 
 						</div>
-						<div class="col-lg-4 col-sm-6 job-listing thumbnail">
-							<h3 class="job-title"><a href="https://vn.indeed.com/viewjob?jk=49661c7b8ce9684e&tk=1c9dcqrmm0tht6bd&from=serp&vjs=3" target="_blank">Real Estate Business Staff </a></h3>
-							<table class="job-description job-description-table">
-									<tr>
-										<td> <span class="job-description-header">Sector:</span></td>
-										<td>Real Estate</td>
-									</tr>
-									<tr>
-										<td> <span class="job-description-header">Location:</span></td>
-										<td>Vinh</td>
-									</tr>
-							</table>
-						</div>
-						<div class="col-lg-4 col-sm-6 job-listing thumbnail">
-							<h3 class="job-title"><a href="https://vn.indeed.com/viewjob?jk=49661c7b8ce9684e&tk=1c9dcqrmm0tht6bd&from=serp&vjs=3" target="_blank">Real Estate Business Staff </a></h3>
-							<table class="job-description job-description-table">
-									<tr>
-										<td> <span class="job-description-header">Sector:</span></td>
-										<td>Real Estate</td>
-									</tr>
-									<tr>
-										<td> <span class="job-description-header">Location:</span></td>
-										<td>Vinh</td>
-									</tr>
-							</table>
-
-						</div>
-				</div>
+				</div> --}}
 <!-- End of Job Listing -->
 				<div class="visible-lg col-lg-2">
 				</div>
