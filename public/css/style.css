@@ -1,0 +1,48 @@
+body {
+	padding-top: 70px;
+	font-family: arial;
+}
+
+.jumbotron {
+	color: #2c3e50;
+	background: #ecf0f1;
+	min-height: 500px;
+	padding: 10px;
+}
+
+.jumbotron > img {
+  max-width: 1000px;
+}
+
+.navbar-inverse {
+	background-color: #2c3e50;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+	color: white;
+}
+
+.navbar-inverse .navbar-brand {
+	color: white;
+}
+
+
+.job-description-header{
+	font-weight: 900;
+	color: #2c3e50;
+}
+
+.job-description-table th,td{
+	padding: 5px;
+	color: #2c3e50;
+}
+
+.job-description {
+	font-family: calibri;
+}
+
+.job-listing {
+	background-color: orange;
+	padding:5px;
+
+}

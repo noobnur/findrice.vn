@@ -29,7 +29,6 @@ app.use(function (req, res, next) {
 
 
 // ======= Setup of main GET reqs ======= //
-/* Using handlebars template engine */
 app.engine('handlebars', exphbs({defaultLayout: 'main'}))
 app.set('view engine', 'handlebars')
 
