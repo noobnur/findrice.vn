@@ -1,28 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 600px;
-		width: 650px;
-		position: absolute;
-		left: 200px;
-		top: 50px;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      /*html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;*/
-      }
-    </style>
-  </head>
-  <body>
+
 	<div>
-		<h1>Prospects</h1>
+		<h1>Places with Prospects</h1>
 	</div>
+  <div class="container">
+    <div class="col-md-6">
     <div id="map"></div>
     <script>
 		var map;
@@ -88,10 +69,8 @@
 			  '</div>'+
 			  '<h1 id="firstHeading" class="firstHeading">Phủ Lý</h1>'+
 			  '<div id="bodyContent">'+
-			  '<p><b>Phủ Lý</b>is the capital city of Hà Nam Province of Vietnam 60 km south of Hanoi on the river Đáy</br>' +
-			  'sandstone rock formation in the southern part of the '+
-			  'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
-			  '(last visited June 22, 2009).</p>'+
+			  '<p><b>Phủ Lý</b> is the capital city of Hà Nam Province of Vietnam 60 km south of Hanoi on the river Đáy</br>' +
+			  'It has a population size of 136,654. </p>'+
 			  '</div>'+
 			  '</div>';
 
@@ -108,10 +87,78 @@
 				infowindow3.open(map, marker3);
 			});
 
+
+			var destinations = new google.maps.MVCArray();
+			destinations.push(new google.maps.LatLng(108.05018,21.55238));
+			destinations.push(new google.maps.LatLng(106.715068,20.696851));
+			destinations.push(new google.maps.LatLng(105.881682,19.75205));
+			 destinations.push(new google.maps.LatLng(105.662006,
+			 19.058165));
+			 destinations.push(new google.maps.LatLng(106.426817,
+			 18.004121));
+			 destinations.push(new google.maps.LatLng(107.361954,
+			 16.697457));
+			 destinations.push(new google.maps.LatLng(108.269495,
+			 16.079742));
+			 destinations.push(new google.maps.LatLng(108.877107,
+			 15.276691));
+			 destinations.push(new google.maps.LatLng(109.33527,
+			 13.426028));
+			 destinations.push(new google.maps.LatLng(109.200136,
+			 11.666859));
+			 destinations.push(new google.maps.LatLng(108.36613,
+			 11.008321));
+			 destinations.push(new google.maps.LatLng(107.220929,
+			 10.364484));
+			 destinations.push(new google.maps.LatLng(106.405113,
+			 9.53084));
+			 destinations.push(new google.maps.LatLng(105.158264,
+			 8.59976));
+			 destinations.push(new google.maps.LatLng(104.795185,
+			 9.241038));
+			 destinations.push(new google.maps.LatLng(105.076202,
+			 9.918491));
+			 destinations.push(new google.maps.LatLng(104.334335,
+			 10.486544));
+			 destinations.push(new google.maps.LatLng(105.199915,
+			 10.88931));
+			 destinations.push(new google.maps.LatLng(106.24967,
+			 10.961812));
+			 destinations.push(new google.maps.LatLng(105.810524,
+			 11.567615));
+			 destinations.push(new google.maps.LatLng(107.491403,
+			 12.337206));
+			 destinations.push(new google.maps.LatLng(107.614548,
+			 13.535531));
+			 destinations.push(new google.maps.LatLng(107.382727,
+			 14.202441));
+			 destinations.push(new google.maps.LatLng(107.564525,
+			 15.202173));
+			 destinations.push(new google.maps.LatLng(107.312706,
+			 15.908538));
+			 destinations.push(new google.maps.LatLng(106.556008,
+			 16.604284));
+
+
+			var polygonOptions = {path: destinations, strokeColor:"#ff0000",fillColor:"#00ff00"};
+			var polygon = new google.maps.Polygon(polygonOptions);
+			polygon.setMap(map);
 		}
     </script>
 		<script async defer
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMm6zu1aVttw8chkv3b4ZqKBQuCYRimAs&callback=initMap">
         </script>
-	 </body>
-</html>
+        </div>
+
+        <div class="col-md-12">
+          <div>
+            <h1>World Bank Medium Cities Project</h1>
+            <h2>Medium Cities in development - opportunities for the people.</h2>
+            <h4>The objective of the Medium Cities Development Project for Vietnam is to increase access to improved urban infrastructure services in Lao Cai City, Phu Ly City, and Vinh City in a sustainable and efficient manner. There are four components to the project, the first component being urban basic infrastructure upgrading and service improvement. </h4>
+            <p>
+              Resource from : http://projects.worldbank.org/P116398/vietnam-medium-cities-development-project?lang=en
+            </p>
+          </div>
+        </div>
+
+        </div>
