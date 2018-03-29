@@ -4,150 +4,153 @@
 	</div>
   <div class="container">
     <div class="col-md-6">
-    <div id="map"></div>
-    <script>
-		var map;
-		function initMap() {
-			map = new google.maps.Map(document.getElementById('map'), {
-			  zoom: 6,
-			  center: new google.maps.LatLng(18.782292, 105.885979),
-			  mapTypeId: 'roadmap'
-			});
+			<div>
+	  		<h1>Prospects</h1>
+	  	</div>
+	      <div id="map"></div>
+	      <script>
+	  		var map;
+	  		function initMap() {
+	  			map = new google.maps.Map(document.getElementById('map'), {
+	  			  zoom: 6,
+	  			  center: new google.maps.LatLng(18.782292, 105.885979),
+	  			  mapTypeId: 'roadmap'
+	  			});
 
-			// City 1 : Vinh
-			var contentString = '<div id="content">'+
-			  '<div id="siteNotice">'+
-			  '</div>'+
-			  '<h1 id="firstHeading" class="firstHeading">Vinh</h1>'+
-			  '<div id="bodyContent">'+
-			  '<p><b>Vinh</b> is the biggest city and economic and cultural center of the North Central Coast of Vietnam.</br>' +
-			  'It is a key point in the East–West economic corridor linking Myanmar, Thailand, Laos and Vietnam.</br>' +
-			  'It has a population size of 490,000<p>'+
-			  '</div>'+
-			  '</div>';
+	  			// City 1 : Vinh
+	  			var contentString = '<div id="content">'+
+	  			  '<div id="siteNotice">'+
+	  			  '</div>'+
+	  			  '<h1 id="firstHeading" class="firstHeading">Vinh</h1>'+
+	  			  '<div id="bodyContent">'+
+	  			  '<p><b>Vinh</b> is the biggest city and economic and cultural center of the North Central Coast of Vietnam.</br>' +
+	  			  'It is a key point in the East–West economic corridor linking Myanmar, Thailand, Laos and Vietnam.</br>' +
+	  			  'It has a population size of 490,000<p>'+
+	  			  '</div>'+
+	  			  '</div>';
 
-			var infowindow = new google.maps.InfoWindow({
-				content: contentString
-			  });
+	  			var infowindow = new google.maps.InfoWindow({
+	  				content: contentString
+	  			  });
 
-			var marker = new google.maps.Marker({
-				position: {lat: 18.679585, lng: 105.681335},
-				map: map,
-				title: 'Vinh'
-			});
-			marker.addListener('click', function() {
-				infowindow.open(map, marker);
-			});
+	  			var marker = new google.maps.Marker({
+	  				position: {lat: 18.679585, lng: 105.681335},
+	  				map: map,
+	  				title: 'Vinh'
+	  			});
+	  			marker.addListener('click', function() {
+	  				infowindow.open(map, marker);
+	  			});
 
-			// City 2 : Lào Cai
-			var contentString2 = '<div id="content">'+
-			  '<div id="siteNotice">'+
-			  '</div>'+
-			  '<h1 id="firstHeading" class="firstHeading">Lào Cai</h1>'+
-			  '<div id="bodyContent">'+
-			  '<p><b>Lào Cai</b> is a city in the Northwest region of Vietnam.</br>' +
-			  'It has a population size of 98,363</br><p> '+
-			  '</div>'+
-			  '</div>';
+	  			// City 2 : Lào Cai
+	  			var contentString2 = '<div id="content">'+
+	  			  '<div id="siteNotice">'+
+	  			  '</div>'+
+	  			  '<h1 id="firstHeading" class="firstHeading">Lào Cai</h1>'+
+	  			  '<div id="bodyContent">'+
+	  			  '<p><b>Lào Cai</b> is a city in the Northwest region of Vietnam.</br>' +
+	  			  'It has a population size of 98,363</br><p> '+
+	  			  '</div>'+
+	  			  '</div>';
 
-			var infowindow2 = new google.maps.InfoWindow({
-				content: contentString2
-			  });
+	  			var infowindow2 = new google.maps.InfoWindow({
+	  				content: contentString2
+	  			  });
 
-			var marker2 = new google.maps.Marker({
-				position: {lat: 22.338155, lng: 104.148755},
-				map: map,
-				title: 'Laocai'
-			});
-			marker2.addListener('click', function() {
-				infowindow2.open(map, marker2);
-			});
+	  			var marker2 = new google.maps.Marker({
+	  				position: {lat: 22.338155, lng: 104.148755},
+	  				map: map,
+	  				title: 'Laocai'
+	  			});
+	  			marker2.addListener('click', function() {
+	  				infowindow2.open(map, marker2);
+	  			});
 
-			// City 3 : Phủ Lý
-			var contentString3 = '<div id="content">'+
-			  '<div id="siteNotice">'+
-			  '</div>'+
-			  '<h1 id="firstHeading" class="firstHeading">Phủ Lý</h1>'+
-			  '<div id="bodyContent">'+
-			  '<p><b>Phủ Lý</b> is the capital city of Hà Nam Province of Vietnam 60 km south of Hanoi on the river Đáy</br>' +
-			  'It has a population size of 136,654. </p>'+
-			  '</div>'+
-			  '</div>';
+	  			// City 3 : Phủ Lý
+	  			var contentString3 = '<div id="content">'+
+	  			  '<div id="siteNotice">'+
+	  			  '</div>'+
+	  			  '<h1 id="firstHeading" class="firstHeading">Phủ Lý</h1>'+
+	  			  '<div id="bodyContent">'+
+	  			  '<p><b>Phủ Lý</b> is the capital city of Hà Nam Province of Vietnam 60 km south of Hanoi on the river Đáy</br>' +
+	  			  'It has a population size of 136,654. </p>'+
+	  			  '</div>'+
+	  			  '</div>';
 
-			var infowindow3 = new google.maps.InfoWindow({
-				content: contentString3
-			  });
+	  			var infowindow3 = new google.maps.InfoWindow({
+	  				content: contentString3
+	  			  });
 
-			var marker3 = new google.maps.Marker({
-				position: {lat: 20.531755, lng: 105.917655},
-				map: map,
-				title: 'Vinh'
-			});
-			marker3.addListener('click', function() {
-				infowindow3.open(map, marker3);
-			});
+	  			var marker3 = new google.maps.Marker({
+	  				position: {lat: 20.531755, lng: 105.917655},
+	  				map: map,
+	  				title: 'Vinh'
+	  			});
+	  			marker3.addListener('click', function() {
+	  				infowindow3.open(map, marker3);
+	  			});
 
+	  			var destinations = [
+	  					new google.maps.LatLng(21.55238,108.05018),
+	  					new google.maps.LatLng(20.696851,106.715068),
+	  					new google.maps.LatLng(19.75205,105.881682),
+	  					new google.maps.LatLng(19.058165,105.662006),
+	  					new google.maps.LatLng(18.004121,106.426817),
+	  					new google.maps.LatLng(16.697457,107.361954),
+	  					new google.maps.LatLng(16.079742,108.269495),
+	  					new google.maps.LatLng(15.276691,108.877107),
+	  					new google.maps.LatLng(13.426028,109.33527),
+	  					new google.maps.LatLng(11.666859,109.200136),
+	  					new google.maps.LatLng(11.008321,108.36613),
+	  					new google.maps.LatLng(10.364484,107.220929),
+	  					new google.maps.LatLng(9.53084,106.405113),
+	  					new google.maps.LatLng(8.59976,105.158264),
+	  					new google.maps.LatLng(9.241038,104.795185),
+	  					new google.maps.LatLng(9.918491,105.076202),
+	  					new google.maps.LatLng(10.486544,104.334335),
+	  					new google.maps.LatLng(10.88931,105.199915),
+	  					new google.maps.LatLng(10.961812,106.24967),
+	  					new google.maps.LatLng(11.567615,105.810524),
+	  					new google.maps.LatLng(12.337206,107.491403),
+	  					new google.maps.LatLng(13.535531,107.614548),
+	  					new google.maps.LatLng(14.202441,107.382727),
+	  					new google.maps.LatLng(15.202173,107.564525),
+	  					new google.maps.LatLng(15.908538,107.312706),
+	  					new google.maps.LatLng(16.604284,106.556008),
+	  					new google.maps.LatLng(17.485315,105.925762),
+	  					new google.maps.LatLng(18.666975,105.094598),
+	  					new google.maps.LatLng(19.265181,103.896532),
+	  					new google.maps.LatLng(19.624668,104.183388),
+	  					new google.maps.LatLng(19.886642,104.822574),
+	  					new google.maps.LatLng(20.758733,104.435),
+	  					new google.maps.LatLng(20.766562,103.203861),
+	  					new google.maps.LatLng(21.675137,102.754896),
+	  					new google.maps.LatLng(22.464753,102.170436),
+	  					new google.maps.LatLng(22.708795,102.706992),
+	  					new google.maps.LatLng(22.703757,103.504515),
+	  					new google.maps.LatLng(22.81915,104.476858),
+	  					new google.maps.LatLng(23.352063,105.329209),
+	  					new google.maps.LatLng(22.976892,105.811247),
+	  					new google.maps.LatLng(22.794268,106.725403),
+	  					new google.maps.LatLng(22.218205,106.567273),
+	  					new google.maps.LatLng(21.811899,107.04342),
+	  					new google.maps.LatLng(21.55238,108.05018)
+	  			];
 
-			var destinations = new google.maps.MVCArray();
-			destinations.push(new google.maps.LatLng(108.05018,21.55238));
-			destinations.push(new google.maps.LatLng(106.715068,20.696851));
-			destinations.push(new google.maps.LatLng(105.881682,19.75205));
-			 destinations.push(new google.maps.LatLng(105.662006,
-			 19.058165));
-			 destinations.push(new google.maps.LatLng(106.426817,
-			 18.004121));
-			 destinations.push(new google.maps.LatLng(107.361954,
-			 16.697457));
-			 destinations.push(new google.maps.LatLng(108.269495,
-			 16.079742));
-			 destinations.push(new google.maps.LatLng(108.877107,
-			 15.276691));
-			 destinations.push(new google.maps.LatLng(109.33527,
-			 13.426028));
-			 destinations.push(new google.maps.LatLng(109.200136,
-			 11.666859));
-			 destinations.push(new google.maps.LatLng(108.36613,
-			 11.008321));
-			 destinations.push(new google.maps.LatLng(107.220929,
-			 10.364484));
-			 destinations.push(new google.maps.LatLng(106.405113,
-			 9.53084));
-			 destinations.push(new google.maps.LatLng(105.158264,
-			 8.59976));
-			 destinations.push(new google.maps.LatLng(104.795185,
-			 9.241038));
-			 destinations.push(new google.maps.LatLng(105.076202,
-			 9.918491));
-			 destinations.push(new google.maps.LatLng(104.334335,
-			 10.486544));
-			 destinations.push(new google.maps.LatLng(105.199915,
-			 10.88931));
-			 destinations.push(new google.maps.LatLng(106.24967,
-			 10.961812));
-			 destinations.push(new google.maps.LatLng(105.810524,
-			 11.567615));
-			 destinations.push(new google.maps.LatLng(107.491403,
-			 12.337206));
-			 destinations.push(new google.maps.LatLng(107.614548,
-			 13.535531));
-			 destinations.push(new google.maps.LatLng(107.382727,
-			 14.202441));
-			 destinations.push(new google.maps.LatLng(107.564525,
-			 15.202173));
-			 destinations.push(new google.maps.LatLng(107.312706,
-			 15.908538));
-			 destinations.push(new google.maps.LatLng(106.556008,
-			 16.604284));
-
-
-			var polygonOptions = {path: destinations, strokeColor:"#ff0000",fillColor:"#00ff00"};
-			var polygon = new google.maps.Polygon(polygonOptions);
-			polygon.setMap(map);
-		}
-    </script>
-		<script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMm6zu1aVttw8chkv3b4ZqKBQuCYRimAs&callback=initMap">
-        </script>
+	  			var vietnam = new google.maps.Polygon({
+	  				paths: destinations,
+	  				strokeColor:'#FF0000',
+	  				strokeOpacity:1,
+	  				strokeWeight: 1,
+	  				fillColor: '#D0D0D0',
+	  				fillOpacity: 0.3
+	  			});
+	  			vietnam.setMap(map);
+	  		}
+	      </script>
+	  		<script async defer
+	                  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMm6zu1aVttw8chkv3b4ZqKBQuCYRimAs&callback=initMap">
+	          </script>
         </div>
 
         <div class="col-md-12">
